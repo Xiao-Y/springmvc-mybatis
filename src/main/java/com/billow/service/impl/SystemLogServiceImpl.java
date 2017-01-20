@@ -1,50 +1,27 @@
 package com.billow.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
+import com.billow.base.service.impl.BaseServiceImpl;
 import com.billow.mapper.SystemLogMapper;
 import com.billow.model.SystemLog;
 import com.billow.service.SystemLogService;
 
 @Service
-public class SystemLogServiceImpl implements SystemLogService {
+public class SystemLogServiceImpl extends BaseServiceImpl<SystemLog> implements SystemLogService {
 
-	@Autowired
-	private SystemLogMapper SystemLogMapper;
+	private SystemLogMapper systemLogMapper;
 
-	@Override
-	public int deleteByPrimaryKey(Integer SystemLogId) {
-		return SystemLogMapper.deleteByPrimaryKey(SystemLogId);
-	}
-
-	@Override
-	public int insert(SystemLog record) {
-		return SystemLogMapper.insert(record);
-	}
-
-	@Override
-	public int insertSelective(SystemLog record) {
-		return SystemLogMapper.insertSelective(record);
-	}
-
-	@Override
-	public SystemLog selectByPrimaryKey(Integer SystemLogId) {
-		return SystemLogMapper.selectByPrimaryKey(SystemLogId);
-	}
-
-	@Override
-	public int updateByPrimaryKeySelective(SystemLog record) {
-		return SystemLogMapper.updateByPrimaryKeySelective(record);
-	}
-
-	@Override
-	public int updateByPrimaryKey(SystemLog record) {
-		return SystemLogMapper.updateByPrimaryKey(record);
+	@Resource
+	public void setSystemLogMapper(SystemLogMapper systemLogMapper) {
+		this.systemLogMapper = systemLogMapper;
+		super.setBaseMapper(systemLogMapper);
 	}
 
 	@Override
 	public void persistLog(SystemLog log) {
-		SystemLogMapper.insert(log);
+		systemLogMapper.insert(log);
 	}
 }

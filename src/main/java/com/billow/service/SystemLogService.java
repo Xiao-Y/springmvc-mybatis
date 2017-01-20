@@ -1,19 +1,9 @@
 package com.billow.service;
 
+import com.billow.base.service.BaseService;
 import com.billow.model.SystemLog;
 
-public interface SystemLogService {
-	int deleteByPrimaryKey(Integer id);
-
-	int insert(SystemLog record);
-
-	int insertSelective(SystemLog record);
-
-	SystemLog selectByPrimaryKey(Integer id);
-
-	int updateByPrimaryKeySelective(SystemLog record);
-
-	int updateByPrimaryKey(SystemLog record);
+public interface SystemLogService extends BaseService<SystemLog> {
 
 	void persistLog(SystemLog log);
 }
