@@ -9,13 +9,12 @@ import org.aspectj.lang.JoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import utils.LoginHelper;
-
 import com.alibaba.fastjson.JSON;
 import com.billow.annotation.SystemControllerLog;
 import com.billow.aop.log.LogAop;
-import com.billow.model.SystemLog;
-import com.billow.service.SystemLogService;
+import com.billow.business.model.SystemLog;
+import com.billow.business.service.SystemLogService;
+import com.billow.utils.LoginHelper;
 
 @Component
 public class LogAopImpl implements LogAop {
