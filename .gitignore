@@ -1,4 +1,5 @@
 *.class
+*.lst
  
 # Package Files #
 *.jar
