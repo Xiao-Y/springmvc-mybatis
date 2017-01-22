@@ -2,6 +2,9 @@ package com.billow.utils;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
 /**
  * request请求的工具类
  * 
@@ -44,5 +47,20 @@ public class RequestUtils {
 			size = 10;
 		}
 		return size;
+	}
+
+	/**
+	 * 获取request
+	 * 
+	 * <br>
+	 * added by liuyongtao<br>
+	 * 
+	 * @return
+	 * 
+	 * @date 2017年1月22日 下午3:13:54
+	 */
+	public static HttpServletRequest getRequest() {
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		return request;
 	}
 }

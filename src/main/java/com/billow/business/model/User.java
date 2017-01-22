@@ -62,4 +62,9 @@ public class User extends BaseModel {
 		this.systemLog = systemLog;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", age=" + age + ", password=" + password + ", phoneNumber=" + phoneNumber + "]";
+	}
+
 }

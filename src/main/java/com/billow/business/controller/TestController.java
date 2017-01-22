@@ -3,11 +3,14 @@ package com.billow.business.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.billow.annotation.SystemControllerLog;
 import com.billow.business.model.User;
@@ -22,8 +25,15 @@ public class TestController {
 	private UserService userService;
 
 	@RequestMapping("/index")
-	public String test() {
-		// userService.deleteTest();
+	public String test(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		User user = new User();
+		user.setAge(23);
+		user.setPassword("111");
+		user.setPhoneNumber("1231313");
+		user.setUserName("Xiao-Y");
+		user.setUserId(1);
+		session.setAttribute("temp", user);
 		return "index";
 	}
 
@@ -42,5 +52,12 @@ public class TestController {
 	@RequestMapping("/testJqueryUi")
 	public String testJqueryUi(Model model, User user, HttpServletRequest request) {
 		return "testJqueryUi";
+	}
+
+	@RequestMapping("/testSession")
+	public String testSession() {
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		HttpSession session = request.getSession();
+		return session.getId();
 	}
 }
