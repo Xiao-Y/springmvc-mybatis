@@ -11,7 +11,7 @@ public class SingleMailSend {
 		JavaMailSenderImpl senderImpl = new JavaMailSenderImpl();
 		senderImpl.setHost("mail.sinosoft.com.cn");
 		senderImpl.setUsername("liuytsz@sinosoft.com.cn"); // 根据自己的情况,设置username
-		senderImpl.setPassword("tao12231118"); // 根据自己的情况, 设置password
+		senderImpl.setPassword("————————"); // 根据自己的情况, 设置password
 		senderImpl.setPort(25);
 
 		Properties properties = new Properties();
