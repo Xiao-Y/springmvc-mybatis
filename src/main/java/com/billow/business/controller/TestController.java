@@ -9,12 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.billow.annotation.SystemControllerLog;
 import com.billow.business.model.User;
 import com.billow.business.service.UserService;
+import com.billow.mq.producer.queue.QueueSender;
+import com.billow.mq.producer.topic.TopicSender;
 import com.github.pagehelper.PageHelper;
 
 @Controller
@@ -23,6 +27,11 @@ public class TestController {
 
 	@Autowired
 	private UserService userService;
+
+//	@Autowired
+	private QueueSender queueSender;
+//	@Autowired
+	private TopicSender topicSender;
 
 	@RequestMapping("/index")
 	public String test(HttpServletRequest request) {
@@ -56,8 +65,42 @@ public class TestController {
 
 	@RequestMapping("/testSession")
 	public String testSession() {
-		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
+				.getRequest();
 		HttpSession session = request.getSession();
 		return session.getId();
+	}
+
+	@RequestMapping("/indexSender")
+	public String indexSender(HttpServletRequest request) {
+		return "indexSender";
+	}
+
+	@ResponseBody
+	@RequestMapping("/testQueueSender")
+	public String testQueueSender(@RequestParam("message") String message) {
+		String queueName = "com.bilow.queue";
+		String opt = "";
+		try {
+			queueSender.sendMessage(queueName, message);
+			opt = "suc";
+		} catch (Exception e) {
+			opt = e.getCause().toString();
+		}
+		return opt;
+	}
+
+	@ResponseBody
+	@RequestMapping("/testTopicSender")
+	public String testTopicSender(@RequestParam("message") String message) {
+		String queueName = "com.bilow.topic";
+		String opt = "";
+		try {
+			topicSender.sendMessage(queueName, message);
+			opt = "suc";
+		} catch (Exception e) {
+			opt = e.getCause().toString();
+		}
+		return opt;
 	}
 }

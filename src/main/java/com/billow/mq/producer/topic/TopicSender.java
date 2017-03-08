@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TopicSender {
 
-	@Resource(name = "jmsTopicTemplate")
+//	@Resource(name = "jmsTopicTemplate")
 	private JmsTemplate jmsTopicTemplate;
 
 	/**

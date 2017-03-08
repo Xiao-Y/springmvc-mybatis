@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class QueueSender {
 
-	@Resource(name = "jmsQueueTemplate")
+//	@Resource(name = "jmsQueueTemplate")
 	private JmsTemplate jmsQueueTemplate;
 
 	/**
