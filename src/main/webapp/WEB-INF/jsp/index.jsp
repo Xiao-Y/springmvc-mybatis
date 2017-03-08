@@ -11,7 +11,6 @@
 	<a href="${pageContext.request.contextPath }/user/findUserList2">findUserList2</a><br/>
 	<a href="${pageContext.request.contextPath }/user/findUserList">findUserList</a><br/>
 	<a href="${pageContext.request.contextPath }/user/prepareForUserAdd">prepareForUserAdd</a><br/>
-	<a href="${pageContext.request.contextPath }/test/indexSender">indexSender</a><br/>
 	<br />
 </body>
 </html>
