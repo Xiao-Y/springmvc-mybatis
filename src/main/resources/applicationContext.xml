@@ -25,11 +25,19 @@
 	<!-- 引入配置文件 -->
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:druid.properties" />
+		<property name="location">
+			<list>
+				<value>classpath:applicationContext.properties</value>
+				<value>classpath:druid.properties</value>
+			</list>
+		</property>
 	</bean>
 
 	<import resource="classpath:spring-druid.xml" />
 	<import resource="classpath:spring-mybatis.xml" />
 	<import resource="classpath:spring-tx.xml" />
 	<import resource="classpath:spring-activemq2.xml" />
+	<import resource="classpath:dubbo-common.xml" />
+	<import resource="classpath:dubbo-provider.xml" />
+	<import resource="classpath:dubbo-consumer.xml" />
 </beans>  
