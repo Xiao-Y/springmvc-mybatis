@@ -1,11 +1,11 @@
-package com.billow.dubbo.provider.service;
+package com.billow.dubbo.consumer.service;
 
 /**
- * 生产者
+ * 消费者
  * 
  * @author liuyongtao
  * 
- * @date 2017年3月11日 下午4:38:31
+ * @date 2017年3月11日 下午4:38:58
  */
 public interface DemoServer {
 	String sayHello(String str);
