@@ -2,6 +2,7 @@ package com.billow.business.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -17,6 +18,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import com.billow.annotation.SystemControllerLog;
 import com.billow.business.model.User;
 import com.billow.business.service.UserService;
+import com.billow.dubbo.provider.service.DemoServer;
 import com.billow.mq.producer.queue.QueueSender;
 import com.billow.mq.producer.topic.TopicSender;
 import com.github.pagehelper.PageHelper;
@@ -32,6 +34,9 @@ public class TestController {
 	private QueueSender queueSender;
 //	@Autowired
 	private TopicSender topicSender;
+	
+	@Resource(name="demoServiceCon")
+	private DemoServer demoServer;
 
 	@RequestMapping("/index")
 	public String test(HttpServletRequest request) {
@@ -102,5 +107,12 @@ public class TestController {
 			opt = e.getCause().toString();
 		}
 		return opt;
+	}
+	
+	@ResponseBody
+	@RequestMapping("/testDubbo")
+	public void testDubbo(){
+		String sayHello = demoServer.sayHello("TTTT");
+		System.out.println(sayHello);
 	}
 }
