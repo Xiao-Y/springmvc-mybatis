@@ -97,5 +97,7 @@ button{
 		<br>
 		<span id="status"></span>
 	</div>
+	<a href="activeMQ/queueConsumer" >接收Queue消息</a>
+	<a href="activeMQ/topicConsumer" >接收Topic消息</a>
 </body>
 </html>

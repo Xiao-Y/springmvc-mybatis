@@ -24,6 +24,23 @@
 		</constructor-arg>
 	</bean>
 
+	<!-- 带监听的 start -->
+	<!-- 定义消息队列（Queue） -->
+	<bean id="demoQueueDestinationListener" class="org.apache.activemq.command.ActiveMQQueue">
+		<!-- 设置消息队列的名字 -->
+		<constructor-arg>
+			<value>com.bilow.queueListener</value>
+		</constructor-arg>
+	</bean>
+	<!-- 定义消息主题（Topic） -->
+	<bean id="demoTopicDestinationListener" class="org.apache.activemq.command.ActiveMQTopic">
+		<!-- 设置消息队列的名字 -->
+		<constructor-arg>
+			<value>com.bilow.topicListener</value>
+		</constructor-arg>
+	</bean>
+	<!-- 带监听的 end -->
+
 	<amq:connectionFactory id="amqConnectionFactory"
 		brokerURL="tcp://127.0.0.1:61616" userName="admin" password="admin" />
 
@@ -55,14 +72,14 @@
 	<bean id="queueListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
-		<property name="destination" ref="demoQueueDestination" />
+		<property name="destination" ref="demoQueueDestinationListener" />
 		<property name="messageListener" ref="queueMessageListener" />
 	</bean>
 	<!-- 配置消息主题监听者（Topic） -->
 	<bean id="topicListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
-		<property name="destination" ref="demoTopicDestination" />
+		<property name="destination" ref="demoTopicDestinationListener" />
 		<property name="messageListener" ref="topicMessageListener" />
 	</bean>
 </beans>  
