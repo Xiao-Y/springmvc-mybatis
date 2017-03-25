@@ -1,0 +1,132 @@
+[DEBUG][2017/03/23 22:19:0412 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:0492 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:05532][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 8ms
+[DEBUG][2017/03/23 22:19:1413 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:1414 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:15526][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:19:16410][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:72)]
+ [DUBBO] Received heartbeat from remote channel /10.248.51.143:63683, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:19:16411][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:82)]
+ [DUBBO] Receive heartbeat response in thread New I/O worker #7, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:19:16411][com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:66)]
+ [DUBBO] Send heartbeat to remote channel /10.248.51.143:20880, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:19:23976][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30000ms elapsed since last read check.
+[DEBUG][2017/03/23 22:19:2413 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:2413 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:25526][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:19:29143][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/springmvc-mybatis/user/findUserList2]
+[DEBUG][2017/03/23 22:19:29147][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/findUserList2
+[DEBUG][2017/03/23 22:19:29147][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.util.List<com.billow.business.model.User> com.billow.business.controller.UserController.findUserList2()]
+[DEBUG][2017/03/23 22:19:29147][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2017/03/23 22:19:29148][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/springmvc-mybatis/user/findUserList2] is: -1
+[DEBUG][2017/03/23 22:19:29149][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2017/03/23 22:19:29150][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:120)]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195ccd82]
+[DEBUG][2017/03/23 22:19:29150][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2017/03/23 22:19:29153][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)]
+Registering transaction synchronization for JDBC Connection
+[DEBUG][2017/03/23 22:19:29154][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] will be managed by Spring
+[DEBUG][2017/03/23 22:19:29156][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select user_id, user_name, age, password, phone_number from t_user u 
+[DEBUG][2017/03/23 22:19:29157][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 
+[DEBUG][2017/03/23 22:19:29164][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 21
+[DEBUG][2017/03/23 22:19:29164][com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:123)]
+stmt enter cache
+[DEBUG][2017/03/23 22:19:29165][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:163)]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195ccd82]
+[DEBUG][2017/03/23 22:19:29165][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:287)]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195ccd82]
+[DEBUG][2017/03/23 22:19:29165][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:292)]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195ccd82]
+[DEBUG][2017/03/23 22:19:29169][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[INFO ][2017/03/23 22:19:29170][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=1, userName=张三666, age=25, password=null, phoneNumber=15507529497]
+[INFO ][2017/03/23 22:19:29170][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=2, userName=22222, age=34, password=null, phoneNumber=15555555555]
+[INFO ][2017/03/23 22:19:29171][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=3, userName=eee, age=23, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29171][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=4, userName=张三, age=24, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29171][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=5, userName=ggg, age=22, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29172][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=6, userName=null, age=null, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29172][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=7, userName=null, age=null, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29172][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=8, userName=gggr, age=34, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29172][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=9, userName=hhh, age=23, password=null, phoneNumber=]
+[INFO ][2017/03/23 22:19:29172][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=37, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=40, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=41, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=42, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=43, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=44, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29173][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=45, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29174][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=46, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29174][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=48, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29174][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=49, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29174][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=51, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[INFO ][2017/03/23 22:19:29174][com.billow.business.controller.UserController.findUserList2(UserController.java:48)]
+User [userId=52, userName=XXXX, age=null, password=null, phoneNumber=22222]
+[DEBUG][2017/03/23 22:19:29174][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'logAopImpl'
+[DEBUG][2017/03/23 22:19:29244][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [[User [userId=1, userName=张三666, age=25, password=null, phoneNumber=15507529497], User [userId=2, userName=22222, age=34, password=null, phoneNumber=15555555555], User [userId=3, userName=eee, age=23, password=null, phoneNumber=], User [userId=4, userName=张三, age=24, password=null, phoneNumber=], User [userId=5, userName=ggg, age=22, password=null, phoneNumber=], User [userId=6, userName=null, age=null, password=null, phoneNumber=], User [userId=7, userName=null, age=null, password=null, phoneNumber=], User [userId=8, userName=gggr, age=34, password=null, phoneNumber=], User [userId=9, userName=hhh, age=23, password=null, phoneNumber=], User [userId=37, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=40, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=41, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=42, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=43, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=44, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=45, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=46, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=48, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=49, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=51, userName=XXXX, age=null, password=null, phoneNumber=22222], User [userId=52, userName=XXXX, age=null, password=null, phoneNumber=22222]]] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@5ad99bc0]
+[DEBUG][2017/03/23 22:19:29244][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2017/03/23 22:19:29245][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2017/03/23 22:19:3414 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:3415 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:35529][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 3ms
+[DEBUG][2017/03/23 22:19:4414 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:4414 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:45528][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:19:53977][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30001ms elapsed since last read check.
+[DEBUG][2017/03/23 22:19:5415 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:19:5415 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:19:55529][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 2ms

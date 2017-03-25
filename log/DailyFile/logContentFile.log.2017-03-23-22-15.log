@@ -1,0 +1,46 @@
+[DEBUG][2017/03/23 22:15:03998][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:040  ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:05508][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 0ms
+[DEBUG][2017/03/23 22:15:13999][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:13999][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:15509][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:15:16397][com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:66)]
+ [DUBBO] Send heartbeat to remote channel /10.248.51.143:20880, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:15:16398][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:72)]
+ [DUBBO] Received heartbeat from remote channel /10.248.51.143:63683, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:15:16399][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:82)]
+ [DUBBO] Receive heartbeat response in thread New I/O worker #7, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:15:23971][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30001ms elapsed since last read check.
+[DEBUG][2017/03/23 22:15:240  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:2411 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:25510][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:15:340  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:340  ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:35510][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:15:441  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:441  ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:45511][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:15:53971][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30000ms elapsed since last read check.
+[DEBUG][2017/03/23 22:15:541  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:15:542  ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:15:55511][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms

@@ -1,0 +1,386 @@
+[DEBUG][2017/03/23 22:18:049  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:0412 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:18:05521][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:18:149  ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:149  ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:18:15521][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:18:16407][com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:66)]
+ [DUBBO] Send heartbeat to remote channel /10.248.51.143:20880, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:18:16408][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:72)]
+ [DUBBO] Received heartbeat from remote channel /10.248.51.143:63683, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:18:16408][com.alibaba.dubbo.remoting.exchange.support.header.HeartbeatHandler.received(HeartbeatHandler.java:82)]
+ [DUBBO] Receive heartbeat response in thread New I/O worker #7, dubbo version: 2.5.3, current host: 10.248.51.143
+[DEBUG][2017/03/23 22:18:23975][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30001ms elapsed since last read check.
+[DEBUG][2017/03/23 22:18:2410 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:2419 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:18:25522][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:18:26336][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/springmvc-mybatis/test/index]
+[DEBUG][2017/03/23 22:18:26337][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /test/index
+[DEBUG][2017/03/23 22:18:26338][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.billow.business.controller.TestController.test(javax.servlet.http.HttpServletRequest)]
+[DEBUG][2017/03/23 22:18:26338][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'testController'
+[DEBUG][2017/03/23 22:18:26338][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/springmvc-mybatis/test/index] is: -1
+[DEBUG][2017/03/23 22:18:26363][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'logAopImpl'
+[DEBUG][2017/03/23 22:18:26364][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1616)]
+Invoking afterPropertiesSet() on bean with name 'index'
+[DEBUG][2017/03/23 22:18:26365][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:26365][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1'
+[DEBUG][2017/03/23 22:18:26366][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:26366][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:26366][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1'
+[DEBUG][2017/03/23 22:18:26367][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:26368][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1241)]
+Rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/WEB-INF/jsp/index.jsp]] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2017/03/23 22:18:26370][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
+Forwarding to resource [/WEB-INF/jsp/index.jsp] in InternalResourceView 'index'
+[DEBUG][2017/03/23 22:18:26767][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2017/03/23 22:18:31959][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/springmvc-mybatis/user/findUserList]
+[DEBUG][2017/03/23 22:18:31959][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/findUserList
+[DEBUG][2017/03/23 22:18:31960][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.billow.business.controller.UserController.findUserList(org.springframework.ui.Model,com.billow.business.model.User,javax.servlet.http.HttpServletRequest)]
+[DEBUG][2017/03/23 22:18:31960][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2017/03/23 22:18:31961][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/springmvc-mybatis/user/findUserList] is: -1
+[DEBUG][2017/03/23 22:18:3238 ][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2017/03/23 22:18:3257 ][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:120)]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a5680df]
+[DEBUG][2017/03/23 22:18:32152][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2017/03/23 22:18:3410 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10000ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:3410 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[INFO ][2017/03/23 22:18:3546 ][com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)]
+{dataSource-1} inited
+[DEBUG][2017/03/23 22:18:3553 ][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)]
+Registering transaction synchronization for JDBC Connection
+[DEBUG][2017/03/23 22:18:3559 ][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] will be managed by Spring
+[DEBUG][2017/03/23 22:18:3568 ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: SELECT count(0) FROM t_user u 
+[DEBUG][2017/03/23 22:18:35105][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 
+[DEBUG][2017/03/23 22:18:35523][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:18:35769][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2017/03/23 22:18:35769][com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:123)]
+stmt enter cache
+[DEBUG][2017/03/23 22:18:35771][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select user_id, user_name, age, password, phone_number from t_user u limit ?,? 
+[DEBUG][2017/03/23 22:18:35772][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 0(Integer), 10(Integer)
+[DEBUG][2017/03/23 22:18:35778][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 10
+[DEBUG][2017/03/23 22:18:35779][com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:123)]
+stmt enter cache
+[DEBUG][2017/03/23 22:18:35780][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:163)]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a5680df]
+[DEBUG][2017/03/23 22:18:35781][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:287)]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a5680df]
+[DEBUG][2017/03/23 22:18:35781][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:292)]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a5680df]
+[DEBUG][2017/03/23 22:18:35784][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2017/03/23 22:18:35786][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2017/03/23 22:18:35786][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:120)]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a3f6976]
+[DEBUG][2017/03/23 22:18:35787][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2017/03/23 22:18:35787][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)]
+Registering transaction synchronization for JDBC Connection
+[DEBUG][2017/03/23 22:18:35790][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] will be managed by Spring
+[DEBUG][2017/03/23 22:18:35790][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select count(*) from t_user u 
+[DEBUG][2017/03/23 22:18:35791][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 
+[DEBUG][2017/03/23 22:18:35792][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2017/03/23 22:18:35793][com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:123)]
+stmt enter cache
+[DEBUG][2017/03/23 22:18:35793][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:163)]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a3f6976]
+[DEBUG][2017/03/23 22:18:35794][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:287)]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a3f6976]
+[DEBUG][2017/03/23 22:18:35794][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:292)]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a3f6976]
+[DEBUG][2017/03/23 22:18:35796][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2017/03/23 22:18:35797][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'logAopImpl'
+[DEBUG][2017/03/23 22:18:36152][org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:367)]
+Creating new transaction with name [com.billow.business.service.impl.SystemLogServiceImpl.persistLog]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+[DEBUG][2017/03/23 22:18:36153][org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:206)]
+Acquired Connection [com.mysql.jdbc.JDBC4Connection@490e5150] for JDBC transaction
+[DEBUG][2017/03/23 22:18:36153][org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:223)]
+Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] to manual commit
+[DEBUG][2017/03/23 22:18:36177][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2017/03/23 22:18:36178][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:120)]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211ee911]
+[DEBUG][2017/03/23 22:18:36182][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] will be managed by Spring
+[DEBUG][2017/03/23 22:18:36182][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: insert into t_system_log (id, module, function, operation, note, content, run_class, create_time, user_id ) values (?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG][2017/03/23 22:18:36196][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: null, 用户管理(String), 查询用户列表(String), 查询(String), 非异步(String), [参数1,类型:User,值:{"pageNo":1,"pageSize":10,"recordCount":21}](String), com.billow.business.controller.UserController.findUserList(String), 2017-03-23 22:18:36.151(Timestamp), null
+[DEBUG][2017/03/23 22:18:36684][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==    Updates: 1
+[DEBUG][2017/03/23 22:18:36685][com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:123)]
+stmt enter cache
+[DEBUG][2017/03/23 22:18:36685][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:163)]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211ee911]
+[DEBUG][2017/03/23 22:18:36686][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCommit(SqlSessionUtils.java:261)]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211ee911]
+[DEBUG][2017/03/23 22:18:36686][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:287)]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211ee911]
+[DEBUG][2017/03/23 22:18:36687][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:292)]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211ee911]
+[DEBUG][2017/03/23 22:18:36688][org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:755)]
+Initiating transaction commit
+[DEBUG][2017/03/23 22:18:36689][org.springframework.jdbc.datasource.DataSourceTransactionManager.doCommit(DataSourceTransactionManager.java:269)]
+Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@490e5150]
+[DEBUG][2017/03/23 22:18:36880][org.springframework.jdbc.datasource.DataSourceTransactionManager.doCleanupAfterCompletion(DataSourceTransactionManager.java:327)]
+Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@490e5150] after transaction
+[DEBUG][2017/03/23 22:18:36880][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2017/03/23 22:18:36882][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1616)]
+Invoking afterPropertiesSet() on bean with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36882][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:36882][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1'
+[DEBUG][2017/03/23 22:18:36882][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:36883][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:36883][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1'
+[DEBUG][2017/03/23 22:18:36883][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+[DEBUG][2017/03/23 22:18:36884][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1241)]
+Rendering view [org.springframework.web.servlet.view.JstlView: name 'user/findUserList'; URL [/WEB-INF/jsp/user/findUserList.jsp]] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2017/03/23 22:18:36885][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'user' of type [com.billow.business.model.User] to request in view with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36885][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'org.springframework.validation.BindingResult.user' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36885][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'userModel' of type [com.billow.business.model.User] to request in view with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36885][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'users' of type [com.github.pagehelper.Page] to request in view with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36886][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'org.springframework.validation.BindingResult.userModel' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36886][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
+Forwarding to resource [/WEB-INF/jsp/user/findUserList.jsp] in InternalResourceView 'user/findUserList'
+[DEBUG][2017/03/23 22:18:36899][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1248)]
+Error rendering view [org.springframework.web.servlet.view.JstlView: name 'user/findUserList'; URL [/WEB-INF/jsp/user/findUserList.jsp]] in DispatcherServlet with name 'SpringMVC'
+org.apache.jasper.JasperException: /WEB-INF/jsp/user/findUserList.jsp(3,0) PWC6117: File "/static/taglib.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:143)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:398)
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.jasper.JasperException: PWC6117: File "/static/taglib.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172)
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917)
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145)
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394)
+	... 67 more
+[DEBUG][2017/03/23 22:18:36903][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:989)]
+Could not complete request
+org.apache.jasper.JasperException: /WEB-INF/jsp/user/findUserList.jsp(3,0) PWC6117: File "/static/taglib.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:143)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:398)
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1244)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.jasper.JasperException: PWC6117: File "/static/taglib.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172)
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917)
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145)
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394)
+	... 67 more
+[DEBUG][2017/03/23 22:18:4411 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:4412 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:18:45523][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 1ms
+[DEBUG][2017/03/23 22:18:53977][org.apache.activemq.transport.AbstractInactivityMonitor$1.run(AbstractInactivityMonitor.java:84)]
+30001ms elapsed since last read check.
+[DEBUG][2017/03/23 22:18:5412 ][org.apache.activemq.transport.AbstractInactivityMonitor$2.run(AbstractInactivityMonitor.java:119)]
+WriteChecker: 10001ms elapsed since last write check.
+[DEBUG][2017/03/23 22:18:5413 ][org.apache.activemq.transport.AbstractInactivityMonitor$3.run(AbstractInactivityMonitor.java:161)]
+Running WriteCheck[tcp://127.0.0.1:61616]
+[DEBUG][2017/03/23 22:18:55535][org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:829)]
+Got ping response for sessionid: 0x15afadbf4820006 after 11ms
