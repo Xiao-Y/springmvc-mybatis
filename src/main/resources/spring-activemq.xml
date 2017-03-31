@@ -11,7 +11,7 @@
 
 	<!-- ActiveMQ 连接工厂 -->
 	<amq:connectionFactory id="amqConnectionFactory"
-		brokerURL="tcp://127.0.0.1:61616" userName="admin" password="admin" />
+		brokerURL="${brokerURL}" userName="admin" password="admin" />
 
 	<!-- spring用于管理真正的Connectionfactory的connectionFactory -->
 	<bean id="connectionFactory"
@@ -19,7 +19,7 @@
 		<!-- 目标ConnectionFacory对应真实的可以产生JMS Connection的ConnectionFactory -->
 		<property name="targetConnectionFactory" ref="amqConnectionFactory" />
 		<!-- Session缓存数量 -->
-		<property name="sessionCacheSize" value="100" />
+		<property name="sessionCacheSize" value="${sessionCacheSize}" />
 	</bean>
 
 	<!-- Spring JmsTemplate的消息生产者 start -->

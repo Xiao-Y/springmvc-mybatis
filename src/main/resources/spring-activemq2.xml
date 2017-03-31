@@ -24,21 +24,38 @@
 		</constructor-arg>
 	</bean>
 
-	<amq:connectionFactory id="amqConnectionFactory"
-		brokerURL="tcp://127.0.0.1:61616" userName="admin" password="admin" />
+	<!-- 带监听的 start -->
+	<!-- 定义消息队列（Queue） -->
+	<bean id="demoQueueDestinationListener" class="org.apache.activemq.command.ActiveMQQueue">
+		<!-- 设置消息队列的名字 -->
+		<constructor-arg>
+			<value>com.bilow.queueListener</value>
+		</constructor-arg>
+	</bean>
+	<!-- 定义消息主题（Topic） -->
+	<bean id="demoTopicDestinationListener" class="org.apache.activemq.command.ActiveMQTopic">
+		<!-- 设置消息队列的名字 -->
+		<constructor-arg>
+			<value>com.bilow.topicListener</value>
+		</constructor-arg>
+	</bean>
+	<!-- 带监听的 end -->
 
-	<!-- 配置JMS连接时长 -->
+	<amq:connectionFactory id="amqConnectionFactory"
+		brokerURL="${brokerURL}" userName="admin" password="admin" />
+
 	<bean id="connectionFactory"
 		class="org.springframework.jms.connection.CachingConnectionFactory">
 		<constructor-arg ref="amqConnectionFactory" />
-		<property name="sessionCacheSize" value="100" />
+		<property name="sessionCacheSize" value="${sessionCacheSize}" />
 	</bean>
 
 	<!-- 配置JMS模板（Queue），Spring提供的JMS工具类，它发送、接收消息。 -->
 	<bean id="jmsQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
 		<property name="connectionFactory" ref="connectionFactory" />
 		<property name="defaultDestination" ref="demoQueueDestination" />
-		<property name="receiveTimeout" value="10000" />
+		<!-- 配置JMS连接时长 -->
+		<property name="receiveTimeout" value="${receiveTimeout}" />
 		<!-- true是topic，false是queue，默认是false，此处显示写出false -->
 		<property name="pubSubDomain" value="false" />
 	</bean>
@@ -46,7 +63,7 @@
 	<bean id="jmsTopicTemplate" class="org.springframework.jms.core.JmsTemplate">
 		<property name="connectionFactory" ref="connectionFactory" />
 		<property name="defaultDestination" ref="demoTopicDestination" />
-		<property name="receiveTimeout" value="10000" />
+		<property name="receiveTimeout" value="${receiveTimeout}" />
 		<!-- true是topic，false是queue，默认是false，此处显示写出false -->
 		<property name="pubSubDomain" value="true" />
 	</bean>
@@ -55,14 +72,14 @@
 	<bean id="queueListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
-		<property name="destination" ref="demoQueueDestination" />
+		<property name="destination" ref="demoQueueDestinationListener" />
 		<property name="messageListener" ref="queueMessageListener" />
 	</bean>
 	<!-- 配置消息主题监听者（Topic） -->
 	<bean id="topicListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
-		<property name="destination" ref="demoTopicDestination" />
+		<property name="destination" ref="demoTopicDestinationListener" />
 		<property name="messageListener" ref="topicMessageListener" />
 	</bean>
 </beans>  

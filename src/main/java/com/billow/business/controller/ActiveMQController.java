@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.billow.mq2.consumer.QueueConsumer;
 import com.billow.mq2.producer.queue.QueueProducer;
 import com.billow.mq2.producer.topic.TopicProducer;
 
@@ -24,8 +25,11 @@ public class ActiveMQController {
 	@Resource
 	private TopicProducer topicProducer;
 
-	@Resource(name = "demoTopicDestination")
+	@Resource
 	private Destination demoTopicDestination;
+
+	@Resource
+	private QueueConsumer queueConsumer;
 
 	@RequestMapping("/mqIndex")
 	public String mqIndex() {
@@ -56,5 +60,11 @@ public class ActiveMQController {
 			e.printStackTrace();
 		}
 		return op;
+	}
+
+	@RequestMapping("/queueConsumer")
+	public String queueConsumer() {
+		queueConsumer.receive(demoQueueDestination);
+		return "activemqIndex";
 	}
 }

@@ -1,5 +1,7 @@
 package com.billow.business.controller;
 
+import org.apache.log4j.Logger;
+
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -26,6 +28,10 @@ import com.github.pagehelper.PageHelper;
 @Controller
 @RequestMapping("/test")
 public class TestController {
+	/**
+	 * Logger for this class
+	 */
+	private static final Logger logger = Logger.getLogger(TestController.class);
 
 	@Autowired
 	private UserService userService;
@@ -48,6 +54,7 @@ public class TestController {
 		user.setUserName("Xiao-Y");
 		user.setUserId(1);
 		session.setAttribute("temp", user);
+		logger.error("8888888888");
 		return "index";
 	}
 
